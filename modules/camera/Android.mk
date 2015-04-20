@@ -19,6 +19,11 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := camera.default
 LOCAL_MODULE_RELATIVE_PATH := hw
 
+LOCAL_CC := $$(TARGET_TOOLCHAIN_ROOT)/../arm-linux-androideabi-4.8/bin/arm-linux-androideabi-gcc$$(HOST_EXECUTABLE_SUFFIX)
+LOCAL_CXX := $$(TARGET_TOOLCHAIN_ROOT)/../arm-linux-androideabi-4.8/bin/arm-linux-androideabi-g++$$(HOST_EXECUTABLE_SUFFIX)
+
+
+
 LOCAL_C_INCLUDES += \
 	system/core/include \
 	system/media/camera/include \
